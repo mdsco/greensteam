@@ -1,0 +1,370 @@
+ 	<div class="row">
+		<div id="logoutDiv" class="col-md-offset-9">
+	        <button id="adminLogoutSubmit" class="btn btn-success" style="opacity: 0;">Click to Logout</button>
+	        <span id="close_display" class="glyphicon glyphicon-remove col-md-offset-1"></span>
+	    </div>
+			
+	</div>
+
+
+	<!--Login/Logout blocks-->
+	<div class="col-lg-8 col-lg-offset-1">
+
+        <div id="adminLogin">
+	        <span><h4 class="col-md-offset-1">You must login to make changes:</h4></span>
+	        <div class="form-inline col-md-offset-1">
+	            <div class="form-group">
+	                <input type="text" class="form-control" id="adminUser" placeholder="username">
+	            </div>
+	            <div class="form-group">
+	                <input type="password" class="form-control" id="adminPass" placeholder="password">
+	            </div>
+	            <button id="adminLoginSubmit" class="btn btn-warning">Click to Login</button>
+	        </div>
+	        <br>
+	        <p id="sign_in_msg" class="text-center">placeholder</p>
+        </div>
+
+    </div>
+
+
+<br><br>
+
+<div id="menuItems">
+
+
+	<div class="row">
+		<h2 id="testJson" class="col-md-4">Administrative Tools</h2>
+		<div class="ec_wrap col-md-5">
+			<span id="expand" class="exp_col">Expand All</span>
+			<span id="collapse" class="exp_col">Collapse All</span>
+		</div>
+	</div>
+
+	<hr>
+	<br>
+
+	<h3 id="add_new_user" >Add New User</h3>
+	
+	<div id="add_form" class="section_body"> 
+	<br>
+		<div class="radio">
+			<label class="radio-inline control-label" for="radios">Select Usertype to enter a new user:</label>
+			<label class="radio-inline">
+				<input id="add_student" name="usertype" id="radios-0" value="Student" type="radio">Student
+			</label>
+
+			<label class="radio-inline">
+				<input id="add_teacher" name="usertype" id="radios-1" value="Teacher" type="radio">Teacher
+			</label>
+		</div><br>
+
+		<div id="add_last_name" class="form_group ">
+			<label for="lastNameField">Enter Last Name</label>
+			<input type="text" class="form-control" id="lastNameField" placeholder="last name" required disabled>
+		</div><br>
+
+		<div id="add_first_name" class="form_group ">
+			<label for="firstNameField">Enter First Name</label>
+			<input type="text" class="form-control" id="firstNameField" placeholder="first name" required disabled>
+		</div><br>
+
+		<div id="add_user" class="form_group ">
+			<label for="userField">Enter Username</label>
+			<input type="text" class="form-control" id="userField" placeholder="user" required disabled>
+		</div><br>
+
+		<div id="add_pass" class="form-group ">
+			<label for="passwordField">Enter Password</label>
+			<input type="password" class="form-control" id="passwordField" placeholder="password" required disabled>
+		</div>
+
+		<div id="add_grade" class="control-group ">
+				<label class="control-label" for="grade">Grade</label>
+			<div class="controls">
+				<select id="add_grade_val" class="form-control" disabled>
+					<option value="CG" selected="">Choose Grade</option>
+					<option value="P">Pre-School</option>
+					<option value="0">Kindergarten</option>
+					<option value="1">1st</option>
+					<option value="2">2nd</option>
+					<option value="3">3rd</option>
+					<option value="4">4th</option>
+					<option value="5">5th</option>
+				</select>
+			    </div>
+		</div><br>
+
+		<div id="add_stud_teacher" class="control-group ">
+				<label class="control-label" for="grade">Teacher</label>
+			<div class="controls">
+				<select id="add_teacher_val" class="form-control" disabled>
+				</select>
+			    </div>
+		</div><br>
+
+		
+
+		<div id="add_submit" class="control-group ">
+				<div class="controls">
+				<button type="" id="addSubmit" class="btn btn-success" disabled>Submit</button>
+			</div>
+		</div>
+		<div id="msgLoc"></div>
+	</div>
+
+
+
+
+
+
+
+	<!--Edit Teacher Panel -->
+	<h3 id="edit_teacher">Edit Teacher</h3>
+	
+	<div class="section_body"> 
+
+		<hr>
+		<div id="editTeacherDrop" class="control-group ">
+				<label class="control-label" for="grade">Select Teacher</label>
+			
+			<div class="controls">
+				<select id="edit_teacher_sel" class="form-control" name="teacher_select">
+				</select>
+			</div>
+
+		</div><br>
+
+		<div id="edit_t_l_name" class="form_group">
+			<label for="editTLName">Update Name</label>
+			<input type="text" class="form-control" id="editTLName" placeholder="name" disabled>
+		</div><br>		
+
+		<div id="edit_t_f_name" class="form_group">
+			<label for="editTFName">Update Name</label>
+			<input type="text" class="form-control" id="editTFName" placeholder="name" disabled>
+		</div><br>
+
+		<div id="edit_t_user" class="form_group">
+			<label for="editTUser">Update Username</label>
+			<input type="text" class="form-control" id="editTUser" placeholder="user" disabled>
+		</div><br>
+
+		<div id="edit_t_pass" class="form-group">
+			<label for="editTPass">Update Password</label>
+			<input type="password" class="form-control" id="editTPass" placeholder="password" disabled>
+		</div>
+
+		<div id="edit_t_grade" class="control-group">
+				<label class="control-label" for="grade">Grade</label>
+			<div class="controls">
+				<select id="edit_t_grade_val" class="form-control" disabled>
+					<option value="P">Pre-School</option>
+					<option value="0">Kindergarten</option>
+					<option value="1">1st</option>
+					<option value="2">2nd</option>
+					<option value="3">3rd</option>
+					<option value="4">4th</option>
+					<option value="5">5th</option>
+				</select>
+			    </div>
+		</div><br>		
+
+		<div id="edit_t_submit" class="control-group">
+			<div class="controls">
+				<button id="editTSubmit" type="" class="btn btn-success" disabled>Submit</button>
+				<!--button type="" class="btn btn-primary" disabled>Add Another</button-->
+			</div>
+			<div id="editTMsgLoc"></div>
+			<br>
+		</div>
+
+	</div>
+
+
+
+
+
+
+
+	<!--Edit Student Panel -->
+	<h3 id="edit_student">Edit Student</h3>
+	
+	<div class="section_body"> 
+
+		<hr>
+		<div id="editSTeacherDrop" class="control-group ">
+				<label class="control-label" for="grade">Select Student's Teacher</label>
+			
+			<div class="controls">
+				<select id="edit_s_teacher_sel" class="form-control" name="student_select">
+				</select>
+			</div>
+
+		</div><br>
+
+		<div id="editSNameDrop" class="control-group ">
+				<label class="control-label" for="grade">Select Student Name</label>
+			
+			<div class="controls">
+				<select id="edit_s_name_sel" class="form-control" name="student_select" disabled>
+				</select>
+			</div>
+
+		</div><br>
+
+		<div id="edit_s_name" class="form_group">
+			<label for="editSName">Update Name</label>
+			<input type="text" class="form-control" id="editSName" placeholder="name" disabled>
+		</div><br>		
+
+		<div id="edit_s_user" class="form_group">
+			<label for="editSUser">Update Username</label>
+			<input type="text" class="form-control" id="editSUser" placeholder="user" disabled>
+		</div><br>
+
+		<!--div id="edit_s_pass" class="form-group">
+			<label for="editSPass">Update Password</label>
+			<input type="password" class="form-control" id="editSPass" placeholder="password" disabled>
+		</div>
+
+		<div id="edit_s_grade" class="control-group">
+				<label class="control-label" for="grade">Grade</label>
+			<div class="controls">
+				<select id="edit_s_grade_val" class="form-control" disabled>
+					<option value="P">Pre-School</option>
+					<option value="0">Kindergarten</option>
+					<option value="1">1st</option>
+					<option value="2">2nd</option>
+					<option value="3">3rd</option>
+					<option value="4">4th</option>
+					<option value="5">5th</option>
+				</select>
+			    </div>
+		</div><br-->
+
+		<div id="editSChangeTDrop" class="control-group ">
+				<label class="control-label" for="grade">Select to Change Student's Teacher</label>
+			
+			<div class="controls">
+				<select id="edit_s_change_t_sel" class="form-control" name="student_select" disabled>
+				</select>
+			</div>
+
+		</div><br>
+
+		<div id="edit_s_submit" class="control-group">
+			<div class="controls">
+				<button id="editSSubmit" type="" class="btn btn-success" disabled>Submit</button>
+				<!--button type="" class="btn btn-primary" disabled>Add Another</button-->
+			</div>
+			<div id="editSMsgLoc"></div>
+			<br>
+		</div>
+
+	</div>
+
+
+
+
+
+
+
+
+		<!--Edit Images Panel-->
+	<h3 id="add_images">Add Images</h3>
+	
+	<div class="section_body"> 
+		<hr>
+
+		<div id="img_grade" class="control-group">
+				<label class="control-label" for="grade">Grade</label>
+			<div class="controls">
+				<select id="img_grade_val" class="form-control">
+					<option value="A">All Images</option>
+					<option value="P">Pre-School</option>
+					<option value="0">Kindergarten</option>
+					<option value="1">1st</option>
+					<option value="2">2nd</option>
+					<option value="3">3rd</option>
+					<option value="4">4th</option>
+					<option value="5">5th</option>
+				</select>
+			    </div>
+		</div><br>	
+		<!--div id="image_teacher" class="control-group ">
+				<label class="control-label" for="grade">Select Teacher</label>
+			<div class="controls">
+				<select id="img_teacher_sel" class="form-control" name="teacher_select">
+				</select>
+			
+			</div>
+
+		</div><br-->
+
+		<div id="display_submit" class="control-group">
+			<div class="controls">
+				<button id="displaySubmit" type="" class="btn btn-success">Display Images</button>
+			</div>
+		</div>
+		<br>
+		<ul id="image_section"></ul>
+
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+	<!--Edit Images Panel-->
+	<h3 id="edit_images">Edit Images</h3>
+	
+	<div class="section_body"> 
+		<hr>
+
+		<div id="img_grade" class="control-group">
+				<label class="control-label" for="grade">Grade</label>
+			<div class="controls">
+				<select id="img_grade_val" class="form-control">
+					<option value="A">All Images</option>
+					<option value="P">Pre-School</option>
+					<option value="0">Kindergarten</option>
+					<option value="1">1st</option>
+					<option value="2">2nd</option>
+					<option value="3">3rd</option>
+					<option value="4">4th</option>
+					<option value="5">5th</option>
+				</select>
+			    </div>
+		</div><br>	
+		<!--div id="image_teacher" class="control-group ">
+				<label class="control-label" for="grade">Select Teacher</label>
+			<div class="controls">
+				<select id="img_teacher_sel" class="form-control" name="teacher_select">
+				</select>
+			
+			</div>
+
+		</div><br-->
+
+		<div id="display_submit" class="control-group">
+			<div class="controls">
+				<button id="displaySubmit" type="" class="btn btn-success">Display Images</button>
+			</div>
+		</div>
+		<br>
+		<ul id="image_section"></ul>
+
+	</div>
+	<br>
+	<br>
+	<br>
+</div>
+
+	

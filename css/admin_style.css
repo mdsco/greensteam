@@ -1,0 +1,128 @@
+  div.body {
+    color: black;
+  }
+
+  #admin_form { 
+  	text-align: left;
+  	font-family: "Century Gothic", proxima_nova, "Helvetic Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+  	width: 800px;
+  	margin: auto;
+  	opacity: .8;
+    color: black;
+  }
+
+  .ec_wrap {
+    padding-top: 31px;
+  }
+
+  .exp_col {
+    color: blue;
+    /*margin: 0 10px 2px 0;*/
+    padding-right: 10px;
+    float: inherit;
+  }
+
+  .exp_col:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    
+  }
+
+  #add_new_user, #edit_teacher, #edit_student, #class_info, #edit_images, #add_images {
+  	margin: 10px 0 0px 0;
+  	background-color: #DDD;
+  	padding: 15px 15px 15px 20px;
+    color: black;
+  }
+
+  .section_body {
+    display: none;
+  }
+
+  .hide_on_load {
+    display: none;
+  }
+
+
+  #add_new_user:hover, #edit_teacher:hover, #edit_student:hover, #class_info:hover, #edit_images:hover, #add_images:hover {
+  	cursor: pointer;
+    color: blue;
+  }
+
+  .form_section {
+    padding: 0 10px 0 10px;
+    border: 1px gray solid; 
+    background-color: #DDD;
+  }
+
+  .section_body {
+    margin-top: 5px;
+  	margin-left: 20px;
+    color: black;
+  }
+
+  #testJson {
+    color: black;
+  }
+
+  #admin_form input, select {
+  	margin: 10px 0 20px 10px;
+  }
+
+  #admin_form input {
+   	padding: 5px;
+  }
+
+  #homerow {
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+
+  #add_submit {
+    margin-bottom: 30px;
+  }
+
+
+
+  #edit_teacher .hide_on_load { 
+
+  }
+
+  #image_section {
+    background-color: #ddd;
+    list-style-type: none;
+    padding-left: 10px;
+  }
+
+  #image_section li {
+    display: inline-block;
+    margin: 10px 5px 10px 5px;
+  }
+
+  #image_section img {
+    border: solid 2px #444;
+    height: 200px;
+
+  }
+
+  #close_display:hover {
+    cursor: pointer;
+  }
+
+  #adminLogin, #teachLogin {
+
+    height: 300px;
+    display: table-cell;
+    vertical-align: bottom;
+  }
+
+  #sign_in_msg {
+    color: red;
+    opacity: 0;
+  }
+
+  #signInErrMSG {
+    color: red;
+    font-size: 14px;
+  }

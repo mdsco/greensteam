@@ -1,0 +1,309 @@
+html {
+  height:100%;
+}
+
+body {
+  height: 100%;
+  /*font-family: 'Tangerine', serif;*/
+  /*font-family:"Avenir LT 45 Book", "Century Gothic", proxima_nova, "Helvetic Neue", Helvetica, Arial, sans-serif;*/
+  -webkit-font-smoothing:antialiased;
+  color:#FFF;
+  margin:0;
+}
+
+.vertical_align_wrap {
+  display:table;
+}
+
+.vertical_align_cell {
+  display:table-cell;
+  vertical-align:top;
+}
+
+.section {
+  height:100%;
+  width:100%;
+  max-height: 1080px;
+}
+
+/*.navbar-default .navbar-nav > li > a {
+    color: #000;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #333;
+}
+
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  background-color: #00a950;
+  color: #000000;
+  /*color: #00a950;*/
+  /*text-decoration: underline;*/
+/*}
+*/
+.nav_item:hover {
+	cursor: pointer;
+	/*text-decoration: underline;*/
+}
+
+#overlay {
+  display:none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: black;
+  opacity: 0.8;
+  z-index: 1;
+}
+
+#admin_panel {
+  display: none;
+  top: 0;
+  left: 5%;
+  padding: 50px 100px;
+  width: 90%;
+  max-width: 1200px;
+  height: 100%;
+  position: fixed;
+  background-color: white;
+  z-index: 2;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+#admin_login, #teacher_login {
+  color: #428BCA;
+}
+
+#admin_login:hover, #teacher_login:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: white;
+}
+
+#welcome_page {
+	background-color: #AAA;
+	/*background-image: url(../images/thurston3.jpg);*/
+  background-image: url(../images/bird2.jpg);
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    color: #FFF;
+  max-height: none;
+}
+
+#welcome_page .grade_body {
+	margin-top: 25%;
+}
+
+.footer {
+
+	margin-top: 10%;
+	margin-bottom: 2%;
+}
+
+#welcome_page .footer .button {
+  
+  cursor:pointer;
+  margin-top: 50px;
+  height:50px;
+  -webkit-border-radius:50% 50%;
+  -moz-border-radius:50% /;
+  border-radius: 50% / 50%;
+
+  margin:auto;
+}
+
+#navT {
+
+  text-shadow: 0px 0px 2px #CFCFCF;
+}
+
+#welcome_page .footer .button:hover {
+  background-color:rgba(255,255,255,0.11);
+}
+
+#introduction_section {
+  padding-top: 3%;
+  padding-bottom: 5%; 
+  height: 110%;
+  background-color: #eee;
+  color: black;
+}
+
+#sub_h2 {
+	margin-top: 4%;
+}
+
+#intro_table_2, #sub_h2 {
+  text-align: right;
+}
+
+#intro_table_1, #intro_table_2, #sub_h2, #main_h2 {
+	opacity: 0;
+}
+
+.grade_head {
+	padding-top: 2.5%;
+	text-align: right;
+}
+
+.grade_head a {
+	color: #FFF;
+}
+
+.grade_head a:hover{
+  color: #FFF;
+}
+
+.grade_head a:visited{
+  color: #FFF;
+}
+
+.grade_body {
+	margin-top: 12%;
+	margin-bottom: 10%;
+}
+
+#fifth_graders {
+  background-color: #3B5998;
+  color: #FFF;
+}
+
+#fifth_graders a {
+  color: #FFF;
+}
+
+#fourth_graders {
+
+  /*background-color: red;*/
+  background-color: #c24642;
+  color: #FFF;
+}
+
+#third_graders {
+  background-color: indigo;
+  color: white;
+}
+
+#third {
+
+  margin-top: 6%;
+}
+
+/*#third .grade_body {
+  margin-top: 3%;
+  margin-bottom: 2%;
+}*/
+
+#second_graders {
+  background-color: #d2d322;
+  /*background-color: #f0ad4e;*/
+  color: black;
+}
+
+#second_graders a {
+  /*background-color: #d0c700;*/
+  /*background-color: #f0d800;*/
+  color: black;
+}
+
+#secondImg {
+  width: 450px;
+}
+
+#first_graders {
+  background-color: #731251;
+  /*background-color: #8600C8;*/
+  color: #FFF;
+}
+
+#kindergarteners {
+  background-color: #f58e28;
+  /*background-color: #F5A13F;*/
+  color: black;
+}
+
+#kindergarteners a {
+  color: black;
+}
+
+#pre-schoolers {
+  background-color: #34993B;
+  color: #FFF;
+}
+
+#final_section{
+  height: 63%;
+  max-height:450px;
+  vertical-align: middle;
+  background-color: #222;
+  font-size: 13px;
+  color: #999;
+  padding-bottom: 5%;
+}
+
+#final_section .vertical_align_cell {
+  vertical-align:  bottom;
+}
+
+@media only screen and (max-width: 1100px) {
+
+  #welcome_page .grade_body {
+  margin-top: 4
+  \0%;
+  /*padding-top: 15%;
+  padding-bottom: 10%;*/
+  }
+
+  #secondImg {
+    width: 350px;
+  }
+}
+
+
+@media only screen and (max-width: 700px) {
+
+  #welcome_page .grade_body {
+	margin-top: 50%;
+	/*padding-top: 15%;
+	padding-bottom: 10%;*/
+	}
+
+  #secondImg {
+    width: 350px;
+  }
+
+
+}
+
+@media only screen and (max-width: 400px) {
+
+  #welcome_page .grade_body {
+  margin-top: 70%;
+  margin-bottom: 5%;
+  /*padding-top: 15%;
+  padding-bottom: 10%;*/
+  }
+
+  .grade_body {
+	margin-top: 30%;
+	/*padding-top: 15%;
+	padding-bottom: 10%;*/
+	}
+
+  #secondImg {
+    width: 200px;
+  }
+
+
+  .footer {
+
+    margin-top: 10%;
+    margin-bottom: 2%;
+  }
+
+}
